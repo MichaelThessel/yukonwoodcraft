@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body{{ with .Params.Bodyclass}} class="{{ . }}" {{ end }}>
+        <div id="page" class="site">
+            {{- partial "header.html" . -}}
+            <div class="site-content-contain">
+                <div id="content" class="site-content">
+                    <div id="primary" class="content-area">
+                        <main id="main" class="site-main" role="main">
+                          {{- block "main" . }}
+                              {{.Content}}
+                          {{- end }}
+                        </main>
+                    </div>
+                </div>
+                {{- partial "footer.html" . -}}
+            </div>
+            {{- partial "footer-js.html" . -}}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+{{ define "main" }}
+<article class="page">
+    <div class="entry-content">
+        <div class="container m-t-35">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-8">
+                    <div class="heading-block text-left">
+                        <h1 class="block-size-5">
+                            {{.Title}}
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container m-t-25 m-b-100">
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <div class="portfolio-wrap">
+
+                        <div id="filters-container" class="cbp-l-filters-text text-left m-b-15">
+                            <div data-filter="*" class="cbp-filter-item cbp-filter-item-active">
+                                All
+                            </div>
+                            <div data-filter=".indoor" class="cbp-filter-item">
+                                Indoor
+                            </div>
+                            <div data-filter=".outdoor" class="cbp-filter-item">
+                                Outdoor
+                            </div>
+                            <div data-filter=".vehicle" class="cbp-filter-item">
+                                Vehicle
+                            </div>
+                        </div>
+
+                        <div id="portfolio-container-grid" class="cbp"
+                             data-loadmoreaction="click" data-loadnoofitems="1" data-layoutmode="masonry" data-captionanimation="overlayRightAlong" data-animationtype="fadeOut"
+                             data-gaphorizontal="30" data-gapvertical="30" data-displaytype="default" data-large-desktop="2" data-tablet-landscape="2" data-tablet-portrait="2" data-mobile="1"
+                             data-defaultfilter="*" >
+
+                            {{range .Pages}}
+                              {{$category := "" }}
+                              {{if .Params.categories}}
+                                {{$category = index (.Params.categories) 0}}
+                              {{end}}
+                              <div class="cbp-item {{$category}}">
+                                <a class="cbp-caption" href="{{.URL}}">
+                                      <div class="cbp-caption-defaultWrap">
+                                          <img src="/images/{{.URL}}/thumb.jpg" class="portfolio-thumbnail" alt="Thumbnail" >
+                                      </div>
+                                      <div class="cbp-caption-activeWrap">
+                                          <div class="cbp-l-caption-alignCenter">
+                                              <div class="cbp-l-caption-body">
+                                                  <div class="cbp-l-caption-title">{{.Title}}</div>
+                                                  <div class="cbp-l-caption-desc">{{.Params.client}}</div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </a>
+                              </div>
+                            {{end}}
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</article>
+{{ end }}
