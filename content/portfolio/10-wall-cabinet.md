@@ -6,5 +6,6 @@ client: "Mary P."
 bodyclass: "single single-portfolio portfolio-details-left"
 categories:
  - indoor
+ - featured
 ---
 For this client a cabinet was created that is recessed in the wall. The cabinet is made of birch plywood and fir.

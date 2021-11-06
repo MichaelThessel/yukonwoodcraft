@@ -26,27 +26,24 @@
                 {{ $imageBaseUrl := .URL | printf "/images%s/" }}
                 {{ $folder := .URL | printf "/static/images%s/" }}
                 {{ $files := readDir $folder  }}
-                {{ range $files  }}
-                    {{ if ne .Name "thumb.jpg" }}
-
-                        {{ $imageUrl := printf "%s/%s" $imageBaseUrl .Name }}
-                        <div class="cbp-item">
-                            <a class="cbp-lightbox cbp-caption" href="{{ $imageUrl }}">
-                                <div class="cbp-caption-defaultWrap">
-                                    <img src="{{ $imageUrl }}" class="portfolio-media-image" alt="Catalogue" >
-                                </div>
-                                <div class="cbp-caption-activeWrap">
-                                    <div class="cbp-l-caption-alignCenter">
-                                        <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title">
-                                                <img src="/images/svg/plus.svg" class="lightbox-plus" alt="Lightbox Plus">
-                                            </div>
+                {{ range where $files "Name" "not in" (slice "featured.jpg" "thumb.jpg") }}
+                    {{ $imageUrl := printf "%s/%s" $imageBaseUrl .Name }}
+                    <div class="cbp-item">
+                        <a class="cbp-lightbox cbp-caption" href="{{ $imageUrl }}">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="{{ $imageUrl }}" class="portfolio-media-image" alt="Catalogue" >
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-title">
+                                            <img src="/images/svg/plus.svg" class="lightbox-plus" alt="Lightbox Plus">
                                         </div>
                                     </div>
                                 </div>
-                            </a>
-                        </div>
-                    {{ end }}
+                            </div>
+                        </a>
+                    </div>
                 {{ end }}
 
             </div>

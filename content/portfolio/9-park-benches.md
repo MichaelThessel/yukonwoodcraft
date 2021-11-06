@@ -6,5 +6,6 @@ client: "Village of Carmacks"
 bodyclass: "single single-portfolio portfolio-details-left"
 categories:
  - outdoor
+ - featured
 ---
 For this project a set of 9 matching park benches were created from Cedar wood.
