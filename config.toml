@@ -2,3 +2,8 @@ baseURL = 'http://yukonwoodcraft.ca/'
 languageCode = 'en-us'
 title = 'Yukonwoodcraft - Cabinet making & custom furniture'
 theme = 'kraft'
+
+[sitemap]
+  changefreq = 'daily'
+  filename = 'sitemap.xml'
+  priority = 0.5
