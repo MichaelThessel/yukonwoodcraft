@@ -1,4 +1,4 @@
-baseURL = 'http://yukonwoodcraft.ca/'
+baseURL = 'https://www.yukonwoodcraft.ca/'
 languageCode = 'en-us'
 title = 'Yukonwoodcraft - Cabinet making & custom furniture'
 theme = 'kraft'
