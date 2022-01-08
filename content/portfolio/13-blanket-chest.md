@@ -1,5 +1,5 @@
 ---
-title: "Fir Blanket Chest"
+title: "Blanket Chest"
 date: 2022-01-07T12:20:54-07:00
 layout: "portfolio-single"
 client: "Julia M."
@@ -8,6 +8,5 @@ categories:
  - indoor
  - featured
 ---
-For this client a custom fir blanket chest was designed and made. The chest
-features box joinery and a simple modern design. The chest has been finished
-with a oil/wax finish to preserve the natural wood look.
+For this client a fir blanket chest was designed and fabricated. The chest
+features box joinery and a simple modern design. A oil/wax finish has been applied to preserve the natural wood look.
