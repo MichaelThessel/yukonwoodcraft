@@ -6,6 +6,5 @@ client: "Mary P."
 bodyclass: "single single-portfolio portfolio-details-left"
 categories:
  - indoor
- - featured
 ---
 For this project a set of 4 fir floating kitchen shelves was created and installed.
