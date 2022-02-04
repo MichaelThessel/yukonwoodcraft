@@ -5,7 +5,6 @@ layout: "portfolio-single"
 client: "Sarah Z."
 bodyclass: "single single-portfolio portfolio-details-left"
 categories:
- - indoor
  - featured
 ---
 For this project a custom table for plants was created. The table was made to fit into an existing corner nook in the clients house.

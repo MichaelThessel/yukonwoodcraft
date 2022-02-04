@@ -5,7 +5,6 @@ layout: "portfolio-single"
 client: "Wren N."
 bodyclass: "single single-portfolio portfolio-details-left"
 categories:
- - indoor
  - featured
 ---
 For this project a multi-mode couch table was designed and built. The table is made

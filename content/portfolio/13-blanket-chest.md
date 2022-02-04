@@ -5,7 +5,6 @@ layout: "portfolio-single"
 client: "Julia M."
 bodyclass: "single single-portfolio portfolio-details-left"
 categories:
- - indoor
  - featured
 ---
 For this client a fir blanket chest was designed and fabricated. The chest
