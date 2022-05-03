@@ -23,8 +23,8 @@
         <div class="media-wrap">
             <div id="portfolio-container-media-504" class="portfolio-media cbp" data-layoutmode="mosaic" data-displaytype="default" data-gaphorizontal="30" data-gapvertical="30" data-large-desktop="2" data-tablet-landscape="2" data-tablet-portrait="2" data-mobile="2">
 
-                {{ $imageBaseUrl := .URL | printf "/images%s/" }}
-                {{ $folder := .URL | printf "/static/images%s/" }}
+                {{ $imageBaseUrl := .RelPermalink | printf "/images%s/" }}
+                {{ $folder := .RelPermalink | printf "/static/images%s/" }}
                 {{ $files := readDir $folder  }}
                 {{ range where $files "Name" "not in" (slice "featured.jpg" "thumb.jpg") }}
                     {{ $imageUrl := printf "%s/%s" $imageBaseUrl .Name }}

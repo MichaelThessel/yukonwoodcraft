@@ -19,9 +19,9 @@
                                 {{$category = index (.Params.categories) 0}}
                               {{end}}
                               <div class="cbp-item {{$category}}">
-                                <a class="cbp-caption" href="{{.URL}}">
+                                <a class="cbp-caption" href="{{.RelPermalink}}">
                                       <div class="cbp-caption-defaultWrap">
-                                          <img src="/images/{{.URL}}/thumb.jpg" class="portfolio-thumbnail" alt="Thumbnail" >
+                                          <img src="/images/{{.RelPermalink}}/thumb.jpg" class="portfolio-thumbnail" alt="Thumbnail" >
                                       </div>
                                       <div class="cbp-caption-activeWrap">
                                           <div class="cbp-l-caption-alignCenter">
